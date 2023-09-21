@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitación Dia del Amor</title>
+    <link src="heart-solid.svg">
+    <link rel="stylesheet" href="estilos.css">
+
+</head>
+<body>
+    <!-- Contenido de la invitación -->
+    
+    <div class="heart" onclick="cambiarmensaje()">
+        
+    </div>
+    <div class="contenido" onclick='playaudio()'>
+        <h1 id="mensaje1">Feliz Dia</h1>
+        <h1 id="mensaje2">Te Amo</h1>
+        <h1 id="mensaje3">Mi Princesita</h1>
+        <br>
+        <h3 id="mensaje">....Toca el centro del corazon....</h3>
+    </div>
+
+
+    <div>
+        <audio id="cancion">
+            <source src="perfect.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+    
+    <script>
+        function playaudio(){
+            document.getElementById("cancion").play();
+            //document.getElementById("mensaje").innerHTML="Ahora toca de arriba del Corazon";
+            setTimeout(function(){
+                document.getElementById("mensaje").innerHTML="";
+            document.getElementById("mensaje1").innerHTML="Mi sueño es tener";
+            document.getElementById("mensaje2").innerHTML="una vida contigo";
+            document.getElementById("mensaje3").innerHTML="Nunca lo olvides";
+}, 12000);
+
+setTimeout(function(){
+                document.getElementById("mensaje").innerHTML="";
+            document.getElementById("mensaje1").innerHTML="FELIZ DIA";
+            document.getElementById("mensaje2").innerHTML="MI AMOR";
+            document.getElementById("mensaje3").innerHTML="TE AMO";;
+}, 20000);
+
+        }
+
+        //function cambiarmensaje(){
+            
+            
+             
+        //}
+    </script>
+   
+    
+
+
+</body>
+</html>
